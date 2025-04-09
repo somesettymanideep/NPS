@@ -5152,7 +5152,7 @@ img {
 .service-card .content .icon {
   width: 70px;
   height: 70px;
-  background: #FF5E14;
+  background: #e31812;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9052,4 +9052,7 @@ img {
 
 .logo-footer{
   border-radius:7px;
+}
+.color-c{
+  color:#000b47!important;
 }
