@@ -581,6 +581,7 @@
             autoplayHoverPause: true,
             dots: false,
             arrows: false,
+            margin: 30, 
             nav: false,
             responsive: {
                 0: {
@@ -599,11 +600,11 @@
                 },
 
                 1200: {
-                    items: 4
+                    items: 3
                 },
 
                 1400: {
-                    items: 4
+                    items: 3
                 },
 
             }
