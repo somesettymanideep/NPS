@@ -575,7 +575,7 @@
     -------------------------------------------*/
     if ($(".project-slider").length) {
         $(".project-slider").owlCarousel({
-            autoplay: false,
+            autoplay: true,
             smartSpeed: 300,
             loop: true,
             autoplayHoverPause: true,
