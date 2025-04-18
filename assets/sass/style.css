@@ -8855,7 +8855,7 @@ img {
   background: #fff;
   box-shadow: 0px 1px 15px 0px rgba(62, 65, 159, 0.1);
   padding-bottom: 0;
-  margin-bottom: -125px;
+  margin-bottom: 125px;
   position: relative;
   z-index: 9;
 }
@@ -8874,7 +8874,7 @@ img {
   height: 100%;
   border: 0;
   outline: 0;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 .wpo-contact-map-section h2.hidden {
   display: none;
@@ -9175,3 +9175,110 @@ img {
   top: 0;
   color: #fff;
 }
+@media only screen and (max-width: 1600px){
+.rs-work-step-one .rs-work-step-item {
+  padding: 30px 30px 30px 30px;
+}
+}
+.rs-work-step-one .rs-work-step-item {
+  background: #ffffff;
+  padding: 40px 60px 40px 40px;
+  border-radius: 2px;
+  clip-path: polygon(0% 0%, 86% 0, 100% 20%, 100% 100%, 0% 100%) !important;
+  transition: all 0.5s ease;
+  position: relative;
+  border-bottom: 2px solid transparent;
+}
+.rs-work-step-one .rs-work-step-icon {
+  margin: 30px 0 30px;
+  position: relative;
+}
+.rs-work-step-one .rs-work-step-icon::before {
+  position: absolute;
+  color: #616161;
+  counter-increment: count;
+  content: "0" counter(count);
+  z-index: 1;
+  inset-inline-end: 0;
+  font-size: 90px;
+  font-weight: 700;
+  top: 50%;
+  opacity: 0.08;
+  transform: translateY(-50%);
+  line-height: 0.8;
+  transition: all 0.5s ease;
+}
+.rs-work-step-one .rs-work-step-icon svg {
+  width: 65px;
+  height: 65px;
+  fill: #e31812;
+}
+.contact-img img{
+  border-radius: 7px;
+}
+.rs-section-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  text-transform: uppercase;
+ 
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+.rs-section-subtitle.has-theme-orange {
+  color: #fb8613;
+}
+
+.rs-section-title {
+  color:#000b47;
+  font-weight: 700;
+  
+}
+.rs-about-one .rs-about-content {
+  margin-inline-start: 30px;
+}
+.rs-about-one .rs-about-description .descrip-1 {
+  font-size: 20px;
+  font-weight: 600;
+  color:#000b47;
+  margin-bottom: 20px;
+}
+.rs-btn.has-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.rs-btn {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 35px;
+  height: 60px;
+  transition: all 0.3s linear;
+  border-radius: 2px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.rs-btn.has-theme-orange {
+  background: #e31812;
+}
+/* .rs-about-one .rs-about-thumb .rs-about-bg-thumb {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-position: center;
+  clip-path: polygon(0% 0%, 96% 0, 100% 11%, 100% 100%, 0% 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
