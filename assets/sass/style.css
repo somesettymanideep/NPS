@@ -9181,7 +9181,7 @@ img {
 }
 }
 .rs-work-step-one .rs-work-step-item {
-  background: #ffffff;
+  background: #ffffff!important;
   padding: 40px 60px 40px 40px;
   border-radius: 2px;
   clip-path: polygon(0% 0%, 86% 0, 100% 20%, 100% 100%, 0% 100%) !important;
@@ -9193,7 +9193,7 @@ img {
   margin: 30px 0 30px;
   position: relative;
 }
-.rs-work-step-one .rs-work-step-icon::before {
+/* .rs-work-step-one .rs-work-step-icon::before {
   position: absolute;
   color: #616161;
   counter-increment: count;
@@ -9207,7 +9207,7 @@ img {
   transform: translateY(-50%);
   line-height: 0.8;
   transition: all 0.5s ease;
-}
+} */
 .rs-work-step-one .rs-work-step-icon svg {
   width: 65px;
   height: 65px;
@@ -9236,6 +9236,14 @@ img {
   color:#000b47;
   font-weight: 700;
   
+}
+@media only screen and (max-width: 1600px) {
+  .rs-work-step-one .rs-work-step-item {
+      padding: 30px 30px 30px 30px;
+  }
+}
+.section-space-bottom {
+  padding-bottom: 100px;
 }
 .rs-about-one .rs-about-content {
   margin-inline-start: 30px;
@@ -9270,7 +9278,7 @@ img {
 .rs-btn.has-theme-orange {
   background: #e31812;
 }
-/* .rs-about-one .rs-about-thumb .rs-about-bg-thumb {
+ .rs-about-bg-thumb {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -9281,4 +9289,134 @@ img {
   clip-path: polygon(0% 0%, 96% 0, 100% 11%, 100% 100%, 0% 100%);
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}
+.rs-about-one .rs-about-thumb {
+  margin-top: -25px;
+  position: relative;
+  height: 500px;
+}
+@media only screen and (max-width: 1366px) {
+  .rs-about-one .rs-about-thumb {
+      height: 400px;
+  }
+}
+.bg-grey{
+  background-color: #f7f7f7;
+}
+.section-pt{
+  padding-top:80px;
+}
+.font-bg{
+  font-size: 1.6rem;
+}
+
+/* service detail page */
+
+.section-space {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.rs-services-details-wrapper .rs-services-details-thumb {
+  margin-bottom: 35px;
+}
+.rs-sidebar-sticky {
+  position: sticky;
+  top: 110px;
+}
+.sidebar-widget.widget-categories-two {
+  padding: 40px 30px 40px 30px;
+}
+.sidebar-widget {
+  position: relative;
+  padding: 40px 30px 40px 30px;
+  background: #F7F7F7;
+  border-radius: 4px;
+}
+.sidebar-widget-title {
+  margin-bottom: 20px;
+}
+.sidebar-widget.widget-categories-two ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.sidebar-widget.widget-categories-two ul li {
+  list-style: none;
+}
+.sidebar-widget.widget-categories-two ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(2, 1, 1, 0.09);
+  padding: 10px 20px;
+  background: #fff;
+  color:#000b47;
+  font-weight: 500;
+  border-radius: 2px;
+  font-size: 17px;
+}
+.sidebar-widget.widget-categories-two ul li i {
+  font-size: 20px;
+}
+.sidebar-widget.widget-cta {
+  position: relative;
+  z-index: 1;
+  height: 600px;
+}
+.sidebar-widget-cta-thumb {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  inset-inline-start: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.rs-services-details-wrapper .rs-list-item ul {
+  /* display: grid; */
+  grid-template-columns: 300px auto;
+  align-items: center;
+  gap: 8px 0px;
+}
+.rs-services-details-wrapper .rs-list-item ul li:not(:last-child) {
+  margin-bottom: 0;
+}
+.rs-list-item ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rs-services-details-wrapper .rs-list-item ul li svg {
+  width: 20px;
+  height: 20px;
+  fill: #e01b13;
+}
+.sidebar-widget.widget-download {
+  background: #F7F7F7;
+  padding: 40px 40px 40px 40px;
+  border-radius: 4px;
+}
+.sidebar-widget.widget-download ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.sidebar-widget.widget-download ul li {
+  list-style: none;
+}
+.sidebar-widget.widget-download ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border: 1px solid rgba(2, 1, 1, 0.09);
+  padding: 0 15px;
+  height: 50px;
+  background: #fff;
+  border-radius: 2px;
+}
+.sidebar-widget.widget-download ul li a .left {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  gap: 10px;
+}
