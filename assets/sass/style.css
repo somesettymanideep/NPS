@@ -645,7 +645,7 @@ img {
 }
 
 .preloader {
-  background-color: #29395b;
+  background-color: #f7f7f7;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -675,6 +675,9 @@ img {
 .preloader * {
   transition: all 0.3s;
 }
+.preloader .content img{
+  height: 70px;
+}
 .preloader .loader-circle {
   position: absolute;
   left: 50%;
@@ -703,7 +706,7 @@ img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 0 0 1px rgba(251, 134, 14, 0.9);
 }
 .preloader #particles-background,
 .preloader #particles-foreground {
@@ -3102,7 +3105,7 @@ img {
   width: 100%;
   height: 100%;
   /* background: #040128; */
-  background: #01001B;
+  /* background: #01001B; */
   content: "";
   opacity: 0.6;
 }
