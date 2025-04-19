@@ -592,14 +592,14 @@ img {
   z-index: -1;
 }
 .wpo-breadcumb-area .wpo-breadcumb-wrap {
-  text-align: center;
+  /* text-align: center; */
 }
 .wpo-breadcumb-area .wpo-breadcumb-wrap h2 {
-  font-size: 60px;
+  font-size: 30px;
   color: #fff;
-  line-height: 60px;
+  line-height: 30px;
   margin-top: -10px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 @media (max-width: 767px) {
   .wpo-breadcumb-area .wpo-breadcumb-wrap h2 {
