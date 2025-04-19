@@ -9434,3 +9434,13 @@ img {
 .rs-services-details-thumb img{
   border-radius: 5px;
 }
+@media only screen and (min-width: 1066px) {
+.navbar-header img{
+  height:50px;
+}
+}
+@media only screen and (min-width: 1066px) {
+  .navbar-header img{
+    height:80px;
+  }
+}
