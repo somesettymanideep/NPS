@@ -3231,7 +3231,7 @@ img {
   z-index: 11;
 }
 .wpo-hero-slider .slide-title {
-  max-width: 650px;
+  max-width: 610px;
 }
 @media (max-width: 1199px) {
   .wpo-hero-slider .slide-title {
@@ -3239,9 +3239,9 @@ img {
   }
 }
 .wpo-hero-slider .slide-title h2 {
-  font-size: 70px;
+  font-size: 40px;
   font-weight: 800;
-  line-height: 90px;
+  line-height: 70px;
   margin: 10px 0 15px;
   color: #fff;
   text-transform: capitalize;
