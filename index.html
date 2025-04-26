@@ -222,7 +222,7 @@
                         </div> <!-- end slide-inner -->
                     </div> <!-- end swiper-slide -->
                     <div class="swiper-slide">
-                        <div class="slide-inner slide-bg-image" data-background="assets/images/project/slider-one.png">
+                        <div class="slide-inner slide-bg-image" data-background="assets/images/partners/third-slider.png">
                             <!-- <div class="gradient-overlay"></div> -->
                             <!-- <div class="container-fluid">
                                 <div class="slide-content">
@@ -720,30 +720,34 @@
                             <div class="title-box">
                                 <h2>Request A Free Estimate</h2>
                             </div>
-                            <form method="post" action="index.html">
+                            <form method="post" id="appointment-form">
                                 <div class="form-group">
-                                    <input type="text" name="username" placeholder="Your Name" required="">
+                                  <input type="text" name="username" placeholder="Your Name" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" placeholder="Email Address" value="" name="form_email" required="">
+                                  <input type="email" name="form_email" placeholder="Email Address" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="date" value="" placeholder="Inspection Date" id="datepicker" class="hasDatepicker">
+                                  <input type="number" name="phone_number" placeholder="Phone number" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" name="phone number" value="" placeholder="Phone number" id="Phone number" class="hasDatepicker">
+                                  <textarea name="requirement" id="requirement" placeholder="Requirements" required></textarea>
                                 </div>
-
                                 <div class="row">
-                                    <div class="col-xl-12">
-                                        <div class="button-box">
-                                            <button class="theme-btn" type="submit" data-loading-text="Please wait...">
-                                                Make An Appintment <span class="icon-next1"></span>
-                                            </button>
-                                        </div>
+                                  <div class="col-xl-12">
+                                    <div class="button-box">
+                                      <button class="theme-btn" type="submit" data-loading-text="Please wait...">
+                                        Make An Appointment <span class="icon-next1"></span>
+                                      </button>
+                                      <div id="loader"><i>Sending...</i></div>
                                     </div>
+                                  </div>
                                 </div>
-                            </form>
+                                <div class="clearfix error-handling-messages">
+                                  <div id="success">Your appointment request has been sent successfully!</div>
+                                  <div id="error">Sorry, something went wrong. Please try again or contact us directly.</div>
+                                </div>
+                              </form>
                         </div>
                     </div>
                     <!--End Why Choose One Form-->
@@ -863,8 +867,40 @@
     <script src="assets/js/jquery-plugin-collection.js"></script>
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script>
+        (function(){
+        emailjs.init("76aupwN0pmNNE_MtW"); // Replace with your actual EmailJS public key
+    })();
+    
+        document.getElementById("appointment-form").addEventListener("submit", function(event) {
+          event.preventDefault();
+    
+          document.querySelector(".theme-btn").disabled = true;
+          document.getElementById("loader").style.display = "inline-block";
+    
+         emailjs.sendForm("service_zmtjqwg", "template_6fcgtu6", this)
+            .then(function() {
+              document.getElementById("success").style.display = "block";
+              document.getElementById("error").style.display = "none";
+              document.getElementById("appointment-form").reset();
+            }, function() {
+              document.getElementById("success").style.display = "none";
+              document.getElementById("error").style.display = "block";
+            })
+            .finally(() => {
+              document.querySelector(".theme-btn").disabled = false;
+              document.getElementById("loader").style.display = "none";
+            });
+        });
+      </script>
+    
+  
+
+
 </body>
 
 
-<!-- Mirrored from wpocean.com/html/tf/sailo-live/index-6.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Apr 2025 14:37:57 GMT -->
+
 </html>

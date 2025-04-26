@@ -9428,6 +9428,10 @@ img {
   background:#fb8613;
   color:#fff;
 }
+.sidebar-widget.widget-categories-two ul li .active {
+  background:#fb8613;
+  color:#fff;
+}
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -9783,4 +9787,21 @@ button.open-close-arrow span.open-arrow {
 }
 .text-justify{
   text-align: justify;
+}
+#loader {
+  display: none;
+}
+#success, #error {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+#success {
+  background-color: #d4edda;
+  color: #155724;
+}
+#error {
+  background-color: #f8d7da;
+  color: #721c24;
 }
