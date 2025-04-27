@@ -9090,7 +9090,7 @@ img {
   padding: 59px 60px 70px;
   background: #00336c;
   border-radius: 20px;
-  margin-left: 30px;
+  /* margin-left: 30px; */
   z-index: 5;
 }
 .why-choose-one__form .title-box {
