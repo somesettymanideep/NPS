@@ -9757,6 +9757,11 @@ button.open-close-arrow span.open-arrow {
 
 /* mobile side btn */
 @media screen and (max-width: 767px) {
+  .rs-services-details-wrapper .rs-list-item ul {
+   
+    grid-template-columns:none;
+   
+  }
 .footer-box {
   display: flex !important;
   position: fixed;
