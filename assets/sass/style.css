@@ -9814,3 +9814,10 @@ button.open-close-arrow span.open-arrow {
   background-color: #f8d7da;
   color: #721c24;
 }
+.slide-content li{
+  list-style-type: none;
+  line-height: 28px;
+}
+.slide-content p{
+  margin-bottom: 10px!important;
+}
