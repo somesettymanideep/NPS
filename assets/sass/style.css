@@ -2141,7 +2141,7 @@ img {
 }
 @media (max-width: 991px) {
   .wpo-site-header .navigation {
-    padding: 20px 0;
+    padding: 10px 0;
   }
 }
 .wpo-site-header #navbar {
@@ -9438,17 +9438,21 @@ img {
 .rs-services-details-thumb img{
   border-radius: 5px;
 }
-@media only screen and (min-width: 1066px) {
+/* @media only screen and (min-width: 1066px) {
 .navbar-header img{
   height:50px;
 }
-}
+} */
 @media only screen and (min-width: 1066px) {
+  .navbar-header img{
+    height:100px;
+  }
+}
+@media only screen and (max-width: 992px) {
   .navbar-header img{
     height:80px;
   }
 }
-
 .sticklist {
   position: fixed;
   z-index: 99999;
